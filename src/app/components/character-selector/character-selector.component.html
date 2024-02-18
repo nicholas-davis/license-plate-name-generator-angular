@@ -1,0 +1,17 @@
+<div class="row center-xs middle-xs">
+  <div class="col-xs-6">
+    <mat-form-field>
+      <mat-label id="characters">Number of characters</mat-label>
+      <select #characterSelect matNativeControl required>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </mat-form-field>
+  </div>
+</div>
+<div class="row center-xs middle-xs">
+  <div class="col-xs-6">
+    <button mat-button color="primary" (click)="generatePlate(characterSelect.value)">Generate</button>
+  </div>
+</div>

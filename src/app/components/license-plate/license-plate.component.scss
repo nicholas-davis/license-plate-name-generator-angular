@@ -1,0 +1,40 @@
+.license-plate {
+  position: relative;
+  height: 12rem;
+}
+
+.license-plate__image {
+  position: absolute;
+  width: 325px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.license-plate__name-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e9f3f2;
+  height: 4rem;
+  width: 15rem;
+  z-index: 1;
+}
+
+.license-plate__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  h2 {
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0;
+  }
+}

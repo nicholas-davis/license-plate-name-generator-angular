@@ -1,0 +1,17 @@
+.container,
+.row {
+  height: 100%;
+}
+
+.app {
+  margin-top: 1rem;
+  height: 12rem;
+}
+
+.app__loader {
+  margin-top: 2rem;
+  width: 3rem !important;
+  height: 3rem !important;
+  display: flex;
+  margin: auto;
+}

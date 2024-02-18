@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <span>Demo</span>
+</mat-toolbar>
+<div class="container">
+  <div class="row center-xs middle-xs">
+    <div class="col-xs-6">
+      <h1>License Plate Name Generator</h1>
+      <app-character-selector (generate)="onGenerate($event)"></app-character-selector>
+      <div class="app">
+        <div *ngIf="!loading">
+          <app-license-plate [licensePlate]="generatedPlate"></app-license-plate>
+        </div>
+        <mat-spinner *ngIf="loading" class="app__loader"></mat-spinner>
+      </div>
+    </div>
+  </div>
+</div>
